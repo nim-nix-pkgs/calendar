@@ -11,7 +11,6 @@
   inputs.src-calendar-master.ref   = "refs/heads/master";
   inputs.src-calendar-master.owner = "adam-mcdaniel";
   inputs.src-calendar-master.repo  = "calendar";
-  inputs.src-calendar-master.dir   = "";
   inputs.src-calendar-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
