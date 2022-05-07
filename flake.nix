@@ -24,11 +24,6 @@
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
     refs = builtins.removeAttrs inputs args;
   } // {
-  #  herculesCI.onPush.default.outputs.calendar-master = self.packages.x86_64-linux.calendar-master;
-    herculesCI = HeBeO1: {
-      onPush.default = HHeF:{
-        outputs.calendar-master = self.packages.x86_64-linux.calendar-master;
-      };
-    };
+    herculesCI.onPush.default.outputs.calendar-master = self.packages.x86_64-linux.calendar-master;
   };
 }
